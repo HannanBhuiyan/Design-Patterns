@@ -5,7 +5,7 @@ class Singleton {
   private static $instance = null;
 
   // Singletone should not be Constructor
-  private function __construct( ) {}
+  private final function __construct( ) {}
 
   // Create new instance
   public static function getInstance(){
@@ -21,10 +21,10 @@ class Singleton {
   }
 
   // Singletons should not be cloneable.
-  private function __clone(){}
+  private final function __clone(){}
  
   // Singletons should not be serialize & unserialize 
-  public function __wakeup(){}
+  public final function __wakeup(){}
 
 }
 
