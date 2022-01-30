@@ -28,7 +28,7 @@ class Singleton {
 
 }
 
-// call new instance
+// call instance
 $singleton = Singleton::getInstance();
  
  
